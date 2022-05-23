@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../headers/Controller.h"
+#include "Controller.h"
 #include <csignal>
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <spdlog/sinks/rotating_file_sink.h>

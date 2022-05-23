@@ -1,1 +1,0 @@
-/usr/bin/c++ -fcoroutines -DSPDLOG_FMT_EXTERNAL -O3 -DNDEBUG CMakeFiles/server.dir/srcs/Controller.cpp.o CMakeFiles/server.dir/srcs/main.cpp.o -o ../bin/server  -lpthread -luuid shared/TCPSocket/libtcpsocket.a shared/fmt/libfmt.a shared/spdlog/libspdlog.a -levent 

@@ -7,7 +7,7 @@ add_library(tcpsocket ${sources})
 
 target_link_libraries(tcpsocket
     PRIVATE
-        fmt::fmt
+        # fmt::fmt
         spdlog::spdlog
         event
 )
@@ -15,8 +15,8 @@ target_link_libraries(tcpsocket
 add_library(tcpsocket::tcpsocket ALIAS tcpsocket)
 target_include_directories(tcpsocket
     INTERFACE
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-        $<INSTALL_INTERFACE:include>)
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/headers>
+        $<INSTALL_INTERFACE:headers>)
 
 # if(CMAKE_BUILD_TYPE STREQUAL "Debug")
 #   add_subdirectory(test)

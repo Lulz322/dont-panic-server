@@ -7,7 +7,7 @@ add_library(DAL ${sources})
 
 target_link_libraries(DAL
     PRIVATE
-        fmt::fmt
+        # fmt::fmt
         spdlog::spdlog
         event
 		soci_core
@@ -19,8 +19,8 @@ target_link_libraries(DAL
 add_library(DAL::DAL ALIAS DAL)
 target_include_directories(DAL
     INTERFACE
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-        $<INSTALL_INTERFACE:include>)
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/headers>
+        $<INSTALL_INTERFACE:headers>)
 
 # if(CMAKE_BUILD_TYPE STREQUAL "Debug")
 #   add_subdirectory(test)

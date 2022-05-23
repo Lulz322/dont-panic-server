@@ -14,9 +14,9 @@
 
 #include <spdlog/spdlog.h>
 #include <json.hpp>
-#include <DAL/CDBS.h>
+#include <CDBS.h>
 
-#include <tcpsocket/TCPSocket.h>
+#include <TCPSocket.h>
 
 #define TOPIC_OUT "sc/out"
 
