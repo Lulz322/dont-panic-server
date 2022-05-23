@@ -1,0 +1,5 @@
+add_subdirectory(fmt)
+add_subdirectory(DAL)
+add_subdirectory(spdlog)
+add_subdirectory(TCPSocket)
+add_subdirectory(nlohmann)

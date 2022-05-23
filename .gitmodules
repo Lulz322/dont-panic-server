@@ -1,0 +1,6 @@
+[submodule "shared/spdlog"]
+	path = shared/spdlog
+	url = git@github.com:gabime/spdlog.git
+[submodule "shared/fmt"]
+	path = shared/fmt
+	url = git@github.com:fmtlib/fmt.git

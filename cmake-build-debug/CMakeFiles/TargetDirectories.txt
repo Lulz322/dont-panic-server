@@ -1,0 +1,3 @@
+/home/lulz/Desktop/houm/dont-panic-server/cmake-build-debug/CMakeFiles/server_app.dir
+/home/lulz/Desktop/houm/dont-panic-server/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lulz/Desktop/houm/dont-panic-server/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,29 @@
+version: "3.5"
+
+services:
+    vs-db1-postgresql:
+        image: docker.io/bitnami/postgresql:12-debian-10
+        container_name: db2.vs
+        hostname: db2.vs
+        restart: always
+        volumes:
+          - /opt/postgresql-vs:/bitnami/postgresql
+        ports:
+          - "5532:5432"
+        environment:
+          - POSTGRESQL_USERNAME=vs
+          - POSTGRESQL_PASSWORD=vs
+          - POSTGRESQL_POSTGRES_PASSWORD=vs
+          - POSTGRESQL_DATABASE=vs
+          - TZ=Europe/Kiev
+          - MAX_CONNECTIONS=300
+
+    sc:
+     image: registry.quadrobit.com/cam/video-service-2019/video_sc:latest
+     restart: always
+     container_name: sc.vs
+     hostname: sc.vs
+     ports:
+      - '4000:4000'
+     links:
+      - db:db

@@ -1,0 +1,1 @@
+/usr/bin/c++  -DZMQ_BUILD_DRAFT_API=1 -DVS_SC=1  -g CMakeFiles/server_app.dir/srcs/main.cpp.o CMakeFiles/server_app.dir/srcs/CDBS.cpp.o CMakeFiles/server_app.dir/srcs/Server.cpp.o CMakeFiles/server_app.dir/srcs/TCPSocket.cpp.o CMakeFiles/server_app.dir/shared/DAL/srcs.cpp.o -o server_app  -lsoci_core -lsoci_postgresql -lpqxx -lpthread -luuid 

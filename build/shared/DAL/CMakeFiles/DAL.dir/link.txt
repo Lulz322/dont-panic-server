@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDAL.a CMakeFiles/DAL.dir/srcs/CDBS.cpp.o
+/usr/bin/ranlib libDAL.a
